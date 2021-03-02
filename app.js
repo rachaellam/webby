@@ -7,6 +7,7 @@ client.onreadystatechange = function() {
 client.send();
 
 function onNavigate(pathname) {
+  window.location = pathname;
   window.open(pathname);
 }
 
