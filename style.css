@@ -198,7 +198,7 @@ body {
 
 #name {
 	font-weight: lighter;
-    width: 50px;
+    width: 75px;
     display: inline-block;
     border: 1px solid transparent;
 }
@@ -260,6 +260,10 @@ body {
 
 	#myLinks {
 		display: none;
+	}
+	
+	.links {
+	  display: none;
 	}
 
 	#nav-header {
