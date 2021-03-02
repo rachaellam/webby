@@ -1,14 +1,23 @@
 const rootDiv = document.getElementById('root');
 var client = new XMLHttpRequest();
-client.open('GET', 'webby.html');
+client.open('GET', 'index.html');
 client.onreadystatechange = function() {
   rootDiv.innerHTML = client.responseText;
 }
 client.send();
 
 const onNavigate = (pathname) => {
+  document.body.scrollTop = document.documentElement.scrollTop = 0;
+  window.history.pushState(
+    {},
+    pathname,
+    window.location.origin + pathname
+  )
   var client = new XMLHttpRequest();
   client.open('GET', pathname + '.html');
+  client.onreadystatechange = function() {
+    rootDiv.innerHTML = client.responseText;
+  }
   client.send();
 }
 
