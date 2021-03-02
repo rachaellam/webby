@@ -7,10 +7,8 @@ client.onreadystatechange = function() {
 client.send();
 
 function onNavigate(pathname) {
-  let xhr = new XMLHttpRequest();
-  xhr.open('GET', pathname);
-  xhr.send();
-};
+  window.open(pathname);
+}
 
 window.onpopstate = () => {
     var client = new XMLHttpRequest();
