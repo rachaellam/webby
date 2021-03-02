@@ -6,19 +6,8 @@ client.onreadystatechange = function() {
 }
 client.send();
 
-const onNavigate = (pathname) => {
-  document.body.scrollTop = document.documentElement.scrollTop = 0;
-  window.history.pushState(
-    {},
-    pathname,
-    window.location.origin + pathname
-  )
-  var client = new XMLHttpRequest();
-  client.open('GET', pathname);
-  client.onreadystatechange = function() {
-    rootDiv.innerHTML = client.responseText;
-  }
-  client.send();
+function onNavigate(pathname) {
+  XMLHttpRequest.open("GET", pathname, true)
 }
 
 window.onpopstate = () => {
