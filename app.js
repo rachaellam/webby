@@ -1,11 +1,54 @@
-import { Amplify, API, Auth, Storage } from 'aws-amplify';
-const awsExports = require('@/aws-exports').default;
-
-Amplify.register(API)
-Amplify.register(Storage)
-Amplify.register(Auth)
-/* Register the services before configure */
-Amplify.configure(awsExports)
+version: 1
+env:
+  variables:
+      key: value
+backend:
+  phases:
+    preBuild:
+      commands:
+        - *enter command*
+    build:
+      commands:
+        - *enter command*
+    postBuild:
+        commands:
+        - *enter command*
+frontend:
+  phases:
+    preBuild:
+      commands:
+        - cd react-app
+        - npm ci
+    build:
+      commands:
+        - npm run build
+  artifacts:
+    files:
+        - location
+        - location
+    discard-paths: yes
+    baseDirectory: location
+  cache:
+    paths:
+        - path
+        - path
+test:
+  phases:
+    preTest:
+      commands:
+        - *enter command*
+    test:
+      commands:
+        - *enter command*
+    postTest:
+      commands:
+        - *enter command*
+  artifacts:
+    files:
+        - location
+        - location
+    configFilePath: *location*
+    baseDirectory: *location*
 
 const rootDiv = document.getElementById('root');
 var client = new XMLHttpRequest();
