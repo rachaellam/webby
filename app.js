@@ -6,32 +6,20 @@ client.onreadystatechange = function() {
 }
 client.send();
 
-// const onNavigate = (pathname) => {
-//   document.body.scrollTop = document.documentElement.scrollTop = 0;
-//   window.history.pushState(
-//     {},
-//     pathname,
-//     window.location.origin + pathname
-//   )
-//   var client = new XMLHttpRequest();
-//   client.open('GET', pathname + '.html');
-//   client.onreadystatechange = function() {
-//     rootDiv.innerHTML = client.responseText;
-//   }
-//   client.send();
-// }
-
-function onNavigate(pathname) {
-  var xhttp = new XMLHttpRequest();
-  xhttp.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
-     document.getElementById("container").innerHTML = this.responseText;
-    }
-  };
-  xhttp.open("GET", pathname, true);
-  xhttp.send();
+const onNavigate = (pathname) => {
+document.body.scrollTop = document.documentElement.scrollTop = 0;
+window.history.pushState(
+  {},
+  pathname,
+  window.location.origin + pathname
+  )
+  var client = new XMLHttpRequest();
+  client.open('GET', pathname + '.html');
+  client.onreadystatechange = function() {
+    rootDiv.innerHTML = client.responseText;
+  }
+  client.send();
 }
-
 
 window.onpopstate = () => {
     var client = new XMLHttpRequest();
