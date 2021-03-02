@@ -7,11 +7,11 @@ client.onreadystatechange = function() {
 client.send();
 
 const onNavigate = (pathname) => {
-document.body.scrollTop = document.documentElement.scrollTop = 0;
-window.history.pushState(
-  {},
-  pathname,
-  window.location.origin + pathname
+  document.body.scrollTop = document.documentElement.scrollTop = 0;
+  window.history.pushState(
+    {},
+    pathname,
+    window.location.origin + pathname
   )
   var client = new XMLHttpRequest();
   client.open('GET', pathname + '.html');
