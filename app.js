@@ -1,3 +1,12 @@
+import React from 'react'
+import { graphql, Link } from 'gatsby'
+import { withAuthenticator, Connect } from 'aws-amplify-react'
+import Amplify, { graphqlOperation } from 'aws-amplify'
+import { listPostLikes } from '../graphql/queries'
+import awsConfig from './aws-exports.js'
+
+Amplify.configure(awsConfig)
+
 const rootDiv = document.getElementById('root');
 var client = new XMLHttpRequest();
 client.open('GET', 'webby.html');
