@@ -1,11 +1,11 @@
-import React from 'react'
-import { graphql, Link } from 'gatsby'
-import { withAuthenticator, Connect } from 'aws-amplify-react'
-import Amplify, { graphqlOperation } from 'aws-amplify'
-import { listPostLikes } from '../graphql/queries'
-import awsConfig from './aws-exports.js'
+import { Amplify, API, Auth, Storage } from 'aws-amplify';
+const awsExports = require('@/aws-exports').default;
 
-Amplify.configure(awsConfig)
+Amplify.register(API)
+Amplify.register(Storage)
+Amplify.register(Auth)
+/* Register the services before configure */
+Amplify.configure(awsExports)
 
 const rootDiv = document.getElementById('root');
 var client = new XMLHttpRequest();
