@@ -9,9 +9,6 @@ client.send();
 const onNavigate = (pathname) => {
   var client = new XMLHttpRequest();
   client.open('GET', pathname + '.html');
-  client.onreadystatechange = function() {
-    rootDiv.innerHTML = client.responseText;
-  }
   client.send();
 }
 
