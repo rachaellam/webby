@@ -14,7 +14,7 @@ const onNavigate = (pathname) => {
     window.location.origin + pathname
   )
   var client = new XMLHttpRequest();
-  client.open('GET', pathname + '.html');
+  client.open('GET', pathname);
   client.onreadystatechange = function() {
     rootDiv.innerHTML = client.responseText;
   }
