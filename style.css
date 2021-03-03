@@ -187,6 +187,10 @@ body {
 	height: 60px;
 }
 
+.links {
+  display: none;
+}
+
 #myLinks {
   display: none;
 }
