@@ -16,6 +16,7 @@ h3 {
 
 h4 {
     font-family: 'Roboto Mono', monospace;
+    font-size: 12px;
 }
 
 li {
@@ -249,14 +250,14 @@ body {
 
 @media screen and (min-width: 800px) {
   
-    body {
+  body {
         font-size: 120%;
-    }
+  }
 
 
-    #name {
+  #name {
         width: inherit;
-    }
+  }
 
 /*    #name:hover {
     	transform: rotate(180deg);
@@ -441,9 +442,10 @@ body {
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  position: absolute;
+  position: relative;
   overflow: hidden;
 }
+
 .hvr-underline-from-left-enthus:before {
   content: "";
   position: absolute;
@@ -460,6 +462,7 @@ body {
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
 }
+
 .hvr-underline-from-left-enthus:hover:before, .hvr-underline-from-left-enthus:focus:before, .hvr-underline-from-left-enthus:active:before {
   right: 0;
 }
@@ -473,6 +476,7 @@ body {
   position: relative;
   overflow: hidden;
 }
+
 .hvr-underline-from-left-student:before {
   content: "";
   position: absolute;
@@ -489,6 +493,7 @@ body {
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
 }
+
 .hvr-underline-from-left-student:hover:before, .hvr-underline-from-left-student:focus:before, .hvr-underline-from-left-student:active:before {
   right: 0;
 }
@@ -502,6 +507,7 @@ body {
   position: relative;
   overflow: hidden;
 }
+
 .hvr-underline-from-left-kombuch:before {
   content: "";
   position: absolute;
@@ -518,6 +524,7 @@ body {
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
 }
+
 .hvr-underline-from-left-kombuch:hover:before, .hvr-underline-from-left-kombuch:focus:before, .hvr-underline-from-left-kombuch:active:before {
   right: 0;
 }
