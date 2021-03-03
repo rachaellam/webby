@@ -29,7 +29,7 @@ li {
 img {
 	width: 40%;
   height: auto;
-  float: right;
+  float: left;
   -webkit-filter: drop-shadow(5px 5px 0 #fdee21)
                   drop-shadow(-1px -1px 0 #fdee21);
   filter: drop-shadow(10px 10px 0 #fdee21) 
@@ -407,6 +407,15 @@ body {
     100% { transform: translate(1px, -2px) rotate(-1deg); }
 	}
 	
+	img {
+	width: 40%;
+  height: auto;
+  float: right;
+  -webkit-filter: drop-shadow(5px 5px 0 #fdee21)
+                  drop-shadow(-1px -1px 0 #fdee21);
+  filter: drop-shadow(10px 10px 0 #fdee21) 
+          drop-shadow(-1px -1px 0 #fdee21);
+  }
 }
 
 
