@@ -6,11 +6,6 @@ client.onreadystatechange = function() {
 }
 client.send();
 
-function onNavigate(pathname) {
-  window.location = pathname;
-  window.open(pathname);
-}
-
 window.onpopstate = () => {
     var client = new XMLHttpRequest();
     client.open('GET', 'home.html');
