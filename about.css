@@ -34,8 +34,9 @@ img {
                   drop-shadow(-1px -1px 0 #fd92f9);
   filter: drop-shadow(10px 10px 0 #fd92f9) 
           drop-shadow(-1px -1px 0 #fd92f9);
-  padding-bottom: 2px;
+  padding-bottom: 3px;
   padding-right: 5px;
+  padding-left: 2px;
 }
 
 a {
