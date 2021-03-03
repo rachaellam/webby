@@ -549,9 +549,6 @@ body {
     -webkit-transition-timing-function: ease-out;
     transition-timing-function: ease-out;
   }
-  .hvr-underline-from-left-enthus:hover:before, .hvr-underline-from-left-enthus:focus:before, .hvr-underline-from-left-enthus:active:before {
-    right: 0;
-  }
   
   .hvr-underline-from-left-student {
     display: inline-block;
