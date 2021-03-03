@@ -12,6 +12,8 @@ h2 {
 
 h3 {
     font-family: 'Roboto Mono', monospace;
+    font-weight: lighter;
+    font-size: 18px;
 }
 
 h4 {
@@ -526,5 +528,36 @@ body {
 }
 
 .hvr-underline-from-left-kombuch:hover:before, .hvr-underline-from-left-kombuch:focus:before, .hvr-underline-from-left-kombuch:active:before {
+  right: 0;
+}
+
+.hvr-underline-from-left-pdf {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden;
+}
+
+.hvr-underline-from-left-pdf:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 75%;
+  bottom: 0;
+  background: #fd92f9;
+  height: 2px;
+  -webkit-transition-property: right;
+  transition-property: right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+
+.hvr-underline-from-left-pdf:hover:before, .hvr-underline-from-left-pdf:focus:before, .hvr-underline-from-left-pdf:active:before {
   right: 0;
 }
