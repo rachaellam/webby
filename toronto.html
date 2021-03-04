@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>lam-b</title>
+	<link rel="stylesheet" type="text/css" href="biden.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<div id="container" class="mobile-container fade-in">
+		<div class="topnav">
+			<div class="header-content">
+				<a id="name" href = "#" onclick="location.href='index.html'; return false;">Rachael</a>
+				<div id="nav-header">
+					<a class="nav-header" href="#" onclick="location.href='work.html'; return false;">Work</a>
+					<a class="nav-header" href="#" onclick="location.href='about.html'; return false;">About</a>
+					<a class="nav-header" href="#" onclick="location.href='contact.html'; return false;">Contact</a>
+				</div>
+				<div class="nav-hamburger" href="javascript:void(0);" onclick="hideNav()">
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+				</div>
+			</div>
+			<div class="links" id="myLinks" style="display: block; transition: display 2s ease 0s;">
+				<a href="#" onclick="location.href='work.html'; hideNav(); return false;">Work</a>
+				<a href="#" onclick="location.href='about.html'; hideNav(); return false;">About</a>
+				<a href="#" onclick="location.href='contact.html'; hideNav(); return false;">Contact</a>
+			</div>
+		</div>
+		<div class="content">
+			<div class="root">
+				<link rel="stylesheet" type="text/css" href="biden.css">
+				<div class="fade-in home animate_animated animate_fadeInUp">
+					<div class="intro">
+						<div>
+							<h1 class="hvr-underline-from-left-enthus">Toronto Crime Analysis</h>
+							<h3>From the City of Toronto's open data portal, I pulled the Neighbourhood Crime Rates data to analyze the rate of crime in each neighbourhood. Although crime rates have risen between 2014-2019, certain neighbourhoods experience higher crime rates in the Greater Toronto Area. Further literature reviews of neighbourhoods who experience higher crime rates are also found to be economically disadvantaged communities. This data, without a further analysis and understanding of socioeconomic circumstances, could lead to higher police surveillance and further punitive action towards marginalized communities. Below are links to my Github repo, as well as a PDF version of the paper. I also added images of the graphs as well as my comparison discussion.<br></h3>
+							<h3 class="hvr-underline-from-left-pdf" onclick="window.open('https://github.com/rachaellam/Toronto-Crime-Rates.git'); return false;">Github Link</h3>
+							<div></div>
+							<h3 class="hvr-underline-from-left-pdf" onclick="window.open('toronto_crime_analysis.pdf'); return false;">PDF Link</h3>
+							<h2>Graphs:</h2>
+							<img src="crime1.png", style="width: 100%">
+							<img src="crime2.png", style="width: 100%">
+							<img src="crime3.png", style="width: 100%">
+							<img src="crime4.png", style="width: 100%">
+							<img src="crime5.png", style="width: 100%">
+							<h2>4.2 &nbsp; Comparison</h2>
+							<h3>Although there are many statistics to digest, it is first necessary to compare these statistics with the average statistics across the Greater Toronto Area. The average percent of people in Toronto who live below the poverty line is 21.9%. This means that Bay Street Corridor, Moss Park and Kensington-Chinatown have a higher percentage of residents living below the poverty line. In comparison, Waterfront Communities-The Island have a lower percentage than the city’s average. <br><br> The racial demographics also vary significantly across the selected neighbourhoods. Bay Street Corridor and Kensington-Chinatown have an exceptionally higher percentage of visible minorities, relative to Toronto’s average of 50.1%. Furthermore, Bay Street Corridor has the highest percentage of non-permanent residents at 20.1% compared to the city’s average of 3.5%. In Moss Park, 2% of residents identify as Aboriginal compared to the city’s average of 0.9%. <br><br> These figures accentuate the economic disparities within the Greater Toronto Area neighbourhoods. Poverty has historically been the rational for higher police surveillance, disguised as a crusade against drug abuse. Unfortunately, such measures have disproportionately affected low income communities, further trapping them in the cycle of poverty. Lack of resources for struggling families in addition to Toronto’s unaffordable housing also compound adverse circumstances. In addition, the impact of racism in Canada can similarly be attributed to the overrepresentation of crime in the four neighbourhoods identified in this section. This practice of racism, through a long history of colonization and genocide, has had lasting consequences for Indigenous communities. Indigenous citizens are more than two times as likely to have involuntary, frequent contact with police (Alberton et al. 2019). Comparably, although certainly different histories, black commu- nities in Canada have faced a very similar history of discriminatory practices including police surveillance. Black Lives Matter Toronto recently protested the “Community Contracts Policy,” which sanctioned the practice of demanding identification from individuals in public spaces. This practice disproportionately af- fected black communities as they constituted 27% of incidences despite only representing 8.5% of Toronto’s population (Teelucksingh 2018).</h3>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<script src="app.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+	
+</body>
+</html>
