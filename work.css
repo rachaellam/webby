@@ -362,22 +362,17 @@ body {
     animation-direction: normal, alternate;
   }
   
-  .row {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0 4px;
+  .flex-container {
+  display: flex;
+  flex-wrap: wrap;
   }
-  
-  .column {
-    flex: 50%;
-    max-width: 50%;
-    padding: 0 4px;
+
+  .flex-item-left {
+  flex: 50%;
   }
-  
-  .column img {
-    margin-top: 8px;
-    vertical-align: middle;
-    width: 100%;
+
+  .flex-item-right {
+  flex: 50%;
   }
   
   @-webkit-keyframes hvr-wobble-horizontal {
@@ -570,20 +565,4 @@ body {
   right: 0;
 }
 
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0 4px;
-}
-  
-.column {
-  flex: 50%;
-  max-width: 50%;
-  padding: 0 4px;
-}
-  
-.column img {
-  margin-top: 8px;
-  vertical-align: middle;
-  width: 100%;
-}
+
