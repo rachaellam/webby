@@ -25,3 +25,4 @@ function resize() {
 }
 
 window.onresize = resize();
+
