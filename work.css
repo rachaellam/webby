@@ -368,11 +368,11 @@ body {
   }
 
   .flex-item-left {
-  flex: 50%;
+  flex: 25%;
   }
 
   .flex-item-right {
-  flex: 50%;
+  flex: 25%;
   }
   
   @-webkit-keyframes hvr-wobble-horizontal {
@@ -565,4 +565,8 @@ body {
   right: 0;
 }
 
-
+@media screen and (max-width: 600px) {
+  .flex-item-right, .flex-item-left {
+    flex: 100%;
+  }
+}
