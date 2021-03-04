@@ -30,10 +30,6 @@ img {
 	width: 20%;
   height: auto;
   float: right;
-  -webkit-filter: drop-shadow(5px 5px 0 #0595e5)
-                  drop-shadow(-1px -1px 0 #0595e5);
-  filter: drop-shadow(10px 10px 0 #0595e5) 
-          drop-shadow(-1px -1px 0 #0595e5);
   padding-bottom: 3px;
   padding-right: 5px;
   padding-left: 2px;
@@ -170,10 +166,6 @@ body {
   img {
 	width: 80%;
   height: auto;
-  -webkit-filter: drop-shadow(5px 5px 0 #0595e5)
-                  drop-shadow(-1px -1px 0 #0595e5);
-  filter: drop-shadow(10px 10px 0 #0595e5) 
-          drop-shadow(-1px -1px 0 #0595e5);
   padding-bottom: 20px;
   }
   
@@ -554,7 +546,7 @@ body {
   left: 0;
   right: 75%;
   bottom: 0;
-  background: #fd92f9;
+  background: #0595e5;
   height: 2px;
   -webkit-transition-property: right;
   transition-property: right;
@@ -565,6 +557,37 @@ body {
 }
 
 .hvr-underline-from-left-pdf:hover:before, .hvr-underline-from-left-pdf:focus:before, .hvr-underline-from-left-pdf:active:before {
+  right: 0;
+}
+
+.hvr-underline-from-left-git {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden;
+}
+
+.hvr-underline-from-left-git:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 75%;
+  bottom: 0;
+  background: #0595e5;
+  height: 2px;
+  -webkit-transition-property: right;
+  transition-property: right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+
+.hvr-underline-from-left-git:hover:before, .hvr-underline-from-left-git:focus:before, .hvr-underline-from-left-git:active:before {
   right: 0;
 }
 

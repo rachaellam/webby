@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>lam-b</title>
+	<link rel="stylesheet" type="text/css" href="covid.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<div id="container" class="mobile-container fade-in">
+		<div class="topnav">
+			<div class="header-content">
+				<a id="name" href = "#" onclick="location.href='index.html'; return false;">Rachael</a>
+				<div id="nav-header">
+					<a class="nav-header" href="#" onclick="location.href='work.html'; return false;">Work</a>
+					<a class="nav-header" href="#" onclick="location.href='about.html'; return false;">About</a>
+					<a class="nav-header" href="#" onclick="location.href='contact.html'; return false;">Contact</a>
+				</div>
+				<div class="nav-hamburger" href="javascript:void(0);" onclick="hideNav()">
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+				</div>
+			</div>
+			<div class="links" id="myLinks" style="display: block; transition: display 2s ease 0s;">
+				<a href="#" onclick="location.href='work.html'; hideNav(); return false;">Work</a>
+				<a href="#" onclick="location.href='about.html'; hideNav(); return false;">About</a>
+				<a href="#" onclick="location.href='contact.html'; hideNav(); return false;">Contact</a>
+			</div>
+		</div>
+		<div class="content">
+			<div class="root">
+				<link rel="stylesheet" type="text/css" href="covid.css">
+				<div class="fade-in home animate_animated animate_fadeInUp">
+					<div class="intro">
+						<div>
+							<h1 class="hvr-underline-from-left-enthus">The Effect of COVID-19 on the Restaurant Industry in the Greater Toronto Area</h>
+							<h3>COVID-19 has had impacts on a variety of sectors, but the foodservice industry has suffered the most extreme consequences. In this paper, we simulate data using <code>R</code> and the Dinesafe dataset from the City of Toronto a parameter. We explore the potential to reopen certain restaurants and how it may avoid permanent closures. Below are links to the Github repo and paper PDF. Additionally, I've added a snapshot of the ethics section as it's crucial be mindful of unanticipated implications in data collection and study.<br></h3>
+							<h3 class="hvr-underline-from-left-git" onclick="window.open('https://github.com/wenmade/covid-resturant-impact.git'); return false;">Github link<br></h3>
+							<h3 class="hvr-underline-from-left-pdf" onclick="window.open('The-Effects-of-Opening-a-Restaurant-in-a-Pandemic_Temp.pdf'); return false;">PDF of the paper</h3>
+							<h2>3 &nbsp; Discussion:</h2>
+							<h3>COVID-19 had affected industries in the most unexpected ways, partially because the rampant nature of COVID-19 was unforeseen but also because policies and procedures were underdeveloped. It is clear through literature reviews and this study, that the restaurant industry is a sector that suffered the most losses. Through the surveys, it was apparent that profit losses between 2019 and 2020 were enough to put some restaurants out of business. This study was executed in an effort to rebuild the service economy and encourage restaurant revival. Although numerically the study seemed successful, the helpfulness section indicated mixed reviews. It is important to follow up with restaurants to gain a deeper understanding into what worked and what failed. Despite this lack of complete understanding, there are a few areas that can be discussed including the impact on restaurants, unemployment of restaurant staff and broader implications of the study. Additionally, we will discuss the weaknesses of the study and how the study could be expanded in the future.</h3>
+							<h2>3.1 &nbsp; Restaurant Hardships</h2>
+							<h3>Restaurant responses to the survey made it extremely obvious that the restaurant industry suffered an enormous amount due to the COVID-19 pandemic. In 2020, Businesses earned on average less than half of what they earned in the previous year according to our study. As restaurants contribute billions of dollars to the economy each year, this loss was observed by the entire Canadian public. Although lockdown measures prevented many citizens from dining out, and therefore, enabled monetary savings, the restaurant industry endured, and continues to endure hardships that forced almost 83% of businesses in the accommodation and foodservice industry to temporarily close (Wu 2020). According to another study by Statistics Canada and the Canadian Chamber of Commerce (Wu 2020), 60% of restaurants would permanently close within three months. Restaurants already earn considerably less than other industries with profit margins that sit between 2.8% and 6.1% on average (Biery and Stats 2018). These already unstable practices became detrimental to restaurants when the epidemic arose. <br><br>
+There are many factors that can be attributed to these massive losses that go beyond the effects of social distancing measures. For businesses that own the property of the restaurant, mortgages still had to be made. Although the Government of Canada created a mortgage payment deferral program, they still required individuals to resume payments after an allotted time, and repay the mortgage payment that was deferred (Canada 2020). This type of payment plan is not feasible for restaurants and many were forced out of business. In addition, few provisions were put in place for businesses that leased their space. The Canada Emergency Commercial Rent Assistance (CECRA), launched by the Ontario government, provided loans to landlords that covered 50% of commercial rent and required tenets to cover 25% of rent (Ontario 2020). Unfortunately, CECRA only lasted from April to June of 2020, which was inadequate considering the impacts of the epidemic still exist in 2021.</h3>
+              <h2>3.2 &nbsp; Individual Impacts</h2>
+              <h3>The COVID-19 epidemic forced massive unemployment due to permanent closure or cuts to scale. It is esti- mated that 67% of businesses had to lay off staff (Wu 2020), contributing to 800,000 individuals experiencing unemployment (Larue 2020). Unfortunately, workers in the service sector tend to already be in vulnerable positions, further exasperating economic disparities. In addition, workers under the age of 25 are twice as likely to work in a sector of the economy that has been shut down (Blundell et al. 2020). This localized situation creates further strain for individuals who suffered unemployment. Similarly to restaurant owners, many individuals in these positions do not own property and therefore continue to pay rent. Unfortunately, the government provided even fewer services that would alleviate rent. The City of Toronto states on their website, “all property owners are strongly urged to find ways to help tenants to stay in their homes. The City encourages landlords and tenants to proactively communicate about their situations and establish fair arrangements” (Toronto 2020). The lack of resources forces tenants and landlords to make personal arrange- ments, which may never occur thus placing individuals in situations of potential homelessness and extreme strain.<br><br> Not only does the closure of restaurants impact those that were laid off, but it also impacts individuals who depend on low-end restaurants. Many communities rely on the “convenience, reliability and affordability”of fast food restaurants especially as panic buying led to a shortage of cheap food staples that many families depend on (Myers and Broyles 2020). Families who depended on free lunch programs provided by schools for their children further experienced food insecurity (Myers and Broyles 2020). Although restaurants still offer curb-side pickup, restaurant closures could continue to limit people’s access to food, especially for those in marginalized communities.</h3>
+              <h2>3.3 &nbsp; Study Implications</h2>
+              <h3>Part of the data about restaurants have been simulated and randomized, thus it does not capture real situations nor does it capture existing problems and biases. It may not be viable for a restaurant to afford the expenses of running a restaurant in those couple of months and could go bankrupt. Especially as COVID-19 guidelines require businesses to purchase the necessary PPE and sanitary equipment. Due to the simulated data and assumptions about decrease in profits, high demand could in fact generate a decent income not anticipated by the experiment. Although this is a beneficial outcome, we must recognize some of these stories that we might have missed. <br><br>
+The experiment’s focus is on the financial gain and keeping the foodservice industry afloat. It does not look at how keeping the open restaurants will affect people’s compliance with social distancing and quarantine during a mandated lockdown. The study contradicts lockdown stay-at-home guidelines and isolating unless absolutely necessary. Furthermore, it does not take into consideration how dining at the restaurants might affect the transmission of the virus. It is beyond the experiment’s scope, but it is an important aspect the Government of Canada must regard. Afterall, virus containment and elimination is extremely important in order to resume normalcy and revive the economy. This study would pose useful though for when the government is transitioning to gradual opening of restaurants when the majority have been vaccinated and the active infected cases are low.</h3>
+              <h2>3.3 &nbsp; Weaknesses</h2>
+              <h3>Part of the data about restaurants have been simulated and randomized, thus it does not capture real situations nor does it capture existing problems and biases. It may not be viable for a restaurant to afford the expenses of running a restaurant in those couple of months and could go bankrupt. Especially as COVID-19 guidelines require businesses to purchase the necessary PPE and sanitary equipment. Due to the simulated data and assumptions about decrease in profits, high demand could in fact generate a decent income not anticipated by the experiment. Although this is a beneficial outcome, we must recognize some of these stories that we might have missed. <br><br>
+The experiment’s focus is on the financial gain and keeping the foodservice industry afloat. It does not look at how keeping the open restaurants will affect people’s compliance with social distancing and quarantine during a mandated lockdown. The study contradicts lockdown stay-at-home guidelines and isolating unless absolutely necessary. Furthermore, it does not take into consideration how dining at the restaurants might affect the transmission of the virus. It is beyond the experiment’s scope, but it is an important aspect the Government of Canada must regard. Afterall, virus containment and elimination is extremely important in order to resume normalcy and revive the economy. This study would pose useful though for when the government is transitioning to gradual opening of restaurants when the majority have been vaccinated and the active infected cases are low.</h3>
+              <h2>3.3 &nbsp; Future Directions</h2>
+              <h3>The study could benefit from adding an analysis of the Greater Toronto Area (GTA) neighborhoods into consideration. A clustering analysis could organize the randomization for the control and treatment groups on a neighborhood level, and that would help understand the challenges each neighborhood faces and thus design different solutions based on their needs. The diversity of the GTA signifies a similar variety of circumstances that should be considered when defining solutions for the restaurant industry. <br><br>
+In addition, the trial could be repeated by using different parameters such as the duration the restaurants should stay open, or a rotational reopening of restaurants. It is unknown as to whether two month rotations are substantial enough to see improvements. Additionally, it would be interesting to explore how demand changes by season. Winter includes many holidays and attracts consumer behaviour, but it may lead to less outdoor foot traffic. Comparatively, summer allows for more foot traffic, yet there may be higher employment rates as students look for jobs thus less leisurely time available. The seasonality of the foodservice industry also creates demand for certain foods at different times of the year. For example, demand for ice cream usually increases in the summer and decreases in the winter. If using a rotational model, it would be unfair for some restaurants to benefit from popular months, while others do not receive the same benefits. We would need to create a model that promotes fairness on all levels of the experiment. <br><br>
+Finally, another direction that could be captured is the definition of a restaurant. Although we used Di- nesafe’s data, it was not concrete on how each restaurant differs and the distinct challenges that each may face. For this study, we excluded restaurants that were categorized as private cafeterias, such as educational facilities and care homes. These foodservice industries are still components of the food industry that need to be discussed, especially in relation to COVID-19 where they are still potential areas of transmission. Additionally, they are businesses that have also suffered increased losses during this time and no business should be excluded from study.</h3>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<script src="app.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+	
+</body>
+</html>

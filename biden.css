@@ -30,10 +30,6 @@ img {
 	width: 20%;
   height: auto;
   float: right;
-  -webkit-filter: drop-shadow(5px 5px 0 #0595e5)
-                  drop-shadow(-1px -1px 0 #0595e5);
-  filter: drop-shadow(10px 10px 0 #0595e5) 
-          drop-shadow(-1px -1px 0 #0595e5);
   padding-bottom: 3px;
   padding-right: 5px;
   padding-left: 2px;
@@ -170,10 +166,6 @@ body {
   img {
 	width: 80%;
   height: auto;
-  -webkit-filter: drop-shadow(5px 5px 0 #0595e5)
-                  drop-shadow(-1px -1px 0 #0595e5);
-  filter: drop-shadow(10px 10px 0 #0595e5) 
-          drop-shadow(-1px -1px 0 #0595e5);
   padding-bottom: 20px;
   }
   
@@ -554,7 +546,7 @@ body {
   left: 0;
   right: 75%;
   bottom: 0;
-  background: #fd92f9;
+  background: #0595e5;
   height: 2px;
   -webkit-transition-property: right;
   transition-property: right;
