@@ -435,6 +435,11 @@ body {
   color: white;
 }
 
+.fa-windows {
+  background: #0e71cb;
+  color: white;
+}
+
 .video-container {
   position: relative;
   width: 100%;
